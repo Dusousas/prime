@@ -49,7 +49,7 @@ export default function Header() {
           type="button"
           aria-label={panelOpen ? "Fechar menu" : "Abrir menu"}
           onClick={() => setPanelOpen((v) => !v)}
-          className="fixed top-[92px] left-10 z-[85] text-4xl text-black"
+          className="fixed top-[92px] left-10 z-[85] text-4xl text-black hidden lg:block"
         >
           {panelOpen ? <FiX className="cursor-pointer" /> : <CiMenuFries className="cursor-pointer" />}
         </button>
@@ -74,13 +74,13 @@ export default function Header() {
           }`}
         >
           <div>
-            <p className="text-xl font-semibold">Mon - Fri</p>
-            <p className="text-black/70">7 AM - 10 PM</p>
+            <p className="text-xl font-semibold uppercase">Segunda - Sexta</p>
+            <p className="text-black/70">05H:00 - 21H:00</p>
           </div>
 
           <div>
-            <p className="text-xl font-semibold">Sat - Sun</p>
-            <p className="text-black/70">7 AM - 2 PM</p>
+            <p className="text-xl font-semibold uppercase">Sábado - Domingo</p>
+            <p className="text-black/70">07H:00 - 14H:00</p>
           </div>
 
           <div className="space-y-2 text-black/70">
@@ -90,7 +90,7 @@ export default function Header() {
 
           <div className="text-black/70">
             <p>121 Manila St.</p>
-            <p>Brookly, CA</p>
+            <p>Brotas, SP</p>
           </div>
         </div>
       </aside>

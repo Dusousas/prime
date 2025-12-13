@@ -110,13 +110,13 @@ export default function Navbar({ variant = "solid" }: NavbarProps): JSX.Element 
     const topbarBase = isTransparent ? "text-white" : "text-black";
     const topbarHover = isTransparent ? "hover:text-white/80" : "hover:text-black/70";
     const topbarActive = isTransparent
-      ? "text-white font-bold border-b border-white/80"
-      : "text-BlueP font-bold";
+      ? "text-AmareloP font-bold border-b border-AmareloP"
+      : "text-AmareloP font-bold";
 
     // drawer (sempre fundo branco)
     const drawerBase = "text-black";
-    const drawerHover = "hover:text-BlueP";
-    const drawerActive = "text-BlueP font-bold";
+    const drawerHover = "hover:text-AmareloP";
+    const drawerActive = "text-AmareloP font-bold";
 
     const classes =
       mode === "topbar"

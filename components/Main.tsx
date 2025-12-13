@@ -22,7 +22,7 @@ export default function Main() {
             <div className="mt-8 flex justify-center lg:justify-start">
               <a
                 href=""
-                className="bg-AmareloP text-black px-8 py-4 font-semibold hover:bg-black hover:text-AmareloP transition-colors duration-300"
+                className="bg-AmareloP text-black uppercase px-8 py-4 font-semibold hover:bg-black hover:text-AmareloP transition-colors duration-300"
               >
                 Entrar em contato
               </a>

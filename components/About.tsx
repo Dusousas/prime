@@ -49,14 +49,14 @@ export default function About() {
     <>
       <section className="py-20">
         <div className="maxW">
-          <div className="flex gap-20">
-            <article className="relative flex justify-center items-center lg:w-[50%]">
-              <img className="absolute w-[65%]" src="/about-img.png" alt="" />
+          <div className="flex flex-col gap-20 lg:flex-row">
+            <article className="relative w-full flex justify-center items-center lg:w-[50%]">
+              <img className="absolute w-[80%] lg:w-[65%]" src="/about-img.png" alt="" />
               <EffectAbout />
             </article>
 
             <article className="lg:w-[50%]">
-              <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium">
+              <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium text-center lg:text-left">
                 Sobre nós
               </h3>
               <h2 className="font-Over font-black text-black mt-4 text-center text-4xl lg:text-left lg:text-4xl">
@@ -67,7 +67,7 @@ export default function About() {
                 Molestiae cumque reiciendis illo voluptas harum debitis minus
                 iusto!
               </p>
-              <div className="mt-6">
+              <div className="mt-6 flex flex-col items-center lg:items-start">
                 <p className="flex items-center gap-2 text-[#444444] uppercase">
                   <SiVerizon className="text-AmareloP" />
                   Duis quis odio quis dui sagittis laoreet.

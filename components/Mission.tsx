@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import EffectMission from "./subc/EffetcMission";
@@ -17,9 +16,9 @@ export default function Mission() {
       <section className="py-20 bg-black relative overflow-hidden">
         <EffectMission />
 
-        <div className="maxW relative z-10 flex gap-20">
-          <article className="lg:w-[60%]">
-            <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium">
+        <div className="maxW relative z-10 flex flex-col gap-20 lg:flex-row">
+          <article className="lg:w-[60%] flex flex-col justify-center items-center lg:items-start text-center">
+            <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium text-center lg:text-left">
               Nossa missão
             </h3>
             <h2 className="font-Over font-black text-white mt-4 text-center text-4xl lg:text-left lg:text-4xl">
@@ -33,7 +32,6 @@ export default function Mission() {
               vel eum aliquam molestias ducimus illo voluptate dolores nostrum
               officia?
             </p>
-
             <Play />
           </article>
 

@@ -22,7 +22,7 @@ export default function Play() {
         type="button"
         aria-label="Abrir vídeo"
         onClick={() => setIsVideoOpen(true)}
-        className="relative inline-flex items-center justify-center mt-10 cursor-pointer"
+        className="relative inline-flex items-center justify-center mt-6 cursor-pointer"
       >
         {/* pulso */}
         <span className="absolute inline-flex h-16 w-16 rounded-full bg-white/25 animate-ping" />

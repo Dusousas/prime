@@ -38,11 +38,11 @@ export default function EffectAbout() {
 
   return (
     <section className="bg-white">
-      <div className="maxW space-y-3">
+      <div className="space-y-3">
         {items.map((item, index) => (
           <h2
             key={`${item.text}-${index}`}
-            className="uppercase font-bold text-6xl tracking-widest"
+            className="uppercase font-bold  tracking-widest text-5xl lg:text-6xl"
             style={getTextStyle(index)}
           >
             {item.text}

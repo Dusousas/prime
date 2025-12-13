@@ -8,8 +8,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-Over: var(--font-overpass);
+  --font-Roboto: var(--font-roboto);
+
+  --color-AmareloP: #FBCE29;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +22,36 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
 }
+
+.maxW{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bgMain{
+  background-image: url('/banner-img.png');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Painel diagonal fechado */
+.logo-panel {
+  width: 320px;
+  height: 420px;
+  background: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+}
+
+

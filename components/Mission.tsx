@@ -1,10 +1,14 @@
 "use client";
+import { useState } from "react";
 
 import { MdOutlineKeyboardDoubleArrowLeft } from "react-icons/md";
 import EffectMission from "./subc/EffetcMission";
 import { motion } from "framer-motion";
+import Play from "./subc/Play";
 
 export default function Mission() {
+
+
   const topArrows = [2, 8, 14, 20]; // right offsets (em "spacing" visual)
   const sideArrows = [36, 60, 84, 108]; // bottom offsets em px (subindo)
 
@@ -16,7 +20,7 @@ export default function Mission() {
         <div className="maxW relative z-10 flex gap-20">
           <article className="lg:w-[60%]">
             <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium">
-              Sobre nós
+              Nossa missão
             </h3>
             <h2 className="font-Over font-black text-white mt-4 text-center text-4xl lg:text-left lg:text-4xl">
               Giving Good Health To Good People.
@@ -29,6 +33,8 @@ export default function Mission() {
               vel eum aliquam molestias ducimus illo voluptate dolores nostrum
               officia?
             </p>
+
+            <Play />
           </article>
 
           <article className="lg:w-[40%] mx-auto">

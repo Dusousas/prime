@@ -11,7 +11,7 @@
   --font-Over: var(--font-overpass);
   --font-Roboto: var(--font-roboto);
 
-  --color-AmareloP:#FBCE29 ;
+  --color-AmareloP: #FBCE29;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,15 +25,22 @@ body {
   font-family: var(--font-Roboto);
 }
 
-.maxW{
+.maxW {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2%;
 }
 
-.bgMain{
+.bgMain {
   background-image: url('/banner-img.png');
   height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bgN {
+  background-image: url('/numbers-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -59,20 +66,18 @@ body {
   width: 320px;
   height: 420px;
   background: #FBCE29;
- clip-path: polygon(
-    100% 0%,   /* topo diagonal */
-    100% 0%,  /* topo direito */
-    100% 100%,/* base direita */
-    0% 100%,  /* base esquerda */
-    0% 70%    /* lateral esquerda inclinada */
-  );
+  clip-path: polygon(100% 0%,
+      /* topo diagonal */
+      100% 0%,
+      /* topo direito */
+      100% 100%,
+      /* base direita */
+      0% 100%,
+      /* base esquerda */
+      0% 70%
+      /* lateral esquerda inclinada */
+    );
 
 
 
 }
-
-
-
-
-
-

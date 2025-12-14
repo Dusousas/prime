@@ -99,7 +99,7 @@ export default function Services() {
 
         {/* CARDS (DINÂMICOS) */}
         <div className="maxW">
-          <article className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <article className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mt-20">
             {cards.map((card) => (
               <div
                 key={card.number}

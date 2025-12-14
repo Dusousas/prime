@@ -56,19 +56,22 @@ export default function Testimonial() {
 
         <div className="maxW relative z-20">
           <Swiper
-            modules={[Autoplay]}
-            loop
-            speed={650}
-            autoplay={{
-              delay: 3500,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            spaceBetween={24}
-            slidesPerView={2}
-            breakpoints={{
-              1024: { slidesPerView: 2, spaceBetween: 32 },
-            }}
+  modules={[Autoplay]}
+  loop
+  speed={650}
+  autoplay={{
+    delay: 3500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  }}
+  spaceBetween={24}
+  slidesPerView={1} // ✅ abaixo de lg: 1 slide
+  breakpoints={{
+    1025: {
+      slidesPerView: 2, // ✅ lg e acima: 2 slides
+      spaceBetween: 32,
+    },
+  }}
             className="!pb-2"
           >
             {testimonials.map((item) => (

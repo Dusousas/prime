@@ -1,7 +1,3 @@
-import React from "react";
-import { CgGym } from "react-icons/cg";
-import { LuBicepsFlexed } from "react-icons/lu";
-
 type ServiceCard = {
   number: string; // ex: "01"
   title: string; // ex: "Avaliação Física"

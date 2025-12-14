@@ -5,9 +5,9 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 type NumberCard = {
   id: number;
   icon: string;
-  value: number; // agora é number pra animar
+  value: number;
   label: string;
-  duration?: number; // ms (opcional)
+  duration?: number;
 };
 
 function easeOutCubic(t: number) {
@@ -18,7 +18,7 @@ export default function Numbers() {
   const cards: NumberCard[] = useMemo(
     () => [
       { id: 1, icon: "/treino.png", value: 300, label: "Alunos Prime", duration: 1200 },
-      { id: 2, icon: "/treino.png", value: 25, label: "Professores", duration: 900 },
+      { id: 2, icon: "/treino.png", value: 5, label: "Professores", duration: 900 },
       { id: 3, icon: "/treino.png", value: 12, label: "Modalidades", duration: 900 },
       { id: 4, icon: "/treino.png", value: 8, label: "Anos de experiência", duration: 900 },
     ],
@@ -29,7 +29,6 @@ export default function Numbers() {
   const [hasStarted, setHasStarted] = useState(false);
   const [counts, setCounts] = useState<number[]>(() => cards.map(() => 0));
 
-  // Observa quando a sessão aparece
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -39,17 +38,16 @@ export default function Numbers() {
         const entry = entries[0];
         if (entry.isIntersecting) {
           setHasStarted(true);
-          obs.disconnect(); // anima só uma vez (se quiser repetir, remova isso)
+          obs.disconnect();
         }
       },
-      { threshold: 0.35 } // 35% visível
+      { threshold: 0.35 }
     );
 
     obs.observe(el);
     return () => obs.disconnect();
   }, []);
 
-  // Anima os números
   useEffect(() => {
     if (!hasStarted) return;
 
@@ -81,23 +79,37 @@ export default function Numbers() {
         <div className="absolute inset-0 bg-black/70" />
 
         <div className="maxW relative z-10">
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="flex justify-center items-stretch flex-wrap">
             {cards.map((card, idx) => (
               <div
                 key={card.id}
-                className="flex flex-col justify-center items-center text-center"
+                className="
+                  w-1/2 lg:w-1/4
+                  px-3 lg:px-4
+                "
               >
-                <div className="border-dotted border-[3px] border-white p-6">
-                  <img className="w-[100px]" src={card.icon} alt="" />
+                {/* CARD PADRONIZADO */}
+                <div
+                  className="
+                    h-full
+                    min-h-[260px] lg:min-h-[300px]
+                    flex flex-col items-center text-center
+                    justify-between
+                    py-8
+                  "
+                >
+                  <div className="border-dotted border-[3px] border-white p-6">
+                    <img className="w-[100px]" src={card.icon} alt="" />
+                  </div>
+
+                  <h2 className="text-white text-5xl font-bold font-Over mt-6 tabular-nums">
+                    {counts[idx]}
+                  </h2>
+
+                  <p className="text-white font-Over text-2xl mt-3">
+                    {card.label}
+                  </p>
                 </div>
-
-                <h2 className="text-white text-5xl font-bold font-Over mt-4 tabular-nums">
-                  {counts[idx]}
-                </h2>
-
-                <p className="text-white font-Over text-2xl mt-2">
-                  {card.label}
-                </p>
               </div>
             ))}
           </div>

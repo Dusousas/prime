@@ -53,7 +53,7 @@ export default function Services() {
     <>
       <section className="py-20 relative">
         <img
-          className="absolute w-[340px] top-8 left-55 -z-10"
+          className="absolute w-[340px] top-8 lg:left-55 -z-10"
           src="/iconservice.png"
           alt=""
         />
@@ -61,11 +61,11 @@ export default function Services() {
         <div className="maxW flex flex-col items-center justify-center lg:flex-row">
           <article className="lg:w-1/2">
             {/* FOTO COM TRIANGULOS E CORTE */}
-            <img className="w-[80%] z-10" src="/service-img1.png" alt="" />
+            <img className="w-[80%] z-10 mx-auto" src="/service-img1.png" alt="" />
           </article>
 
           <article className="lg:w-1/2">
-            <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium text-center lg:text-left">
+            <h3 className="font-Roboto uppercase text-AmareloP text-xl font-medium text-center mt-10 lg:text-left lg:mt-0">
               Nossos diferenciais
             </h3>
             <h2 className="font-Over font-black text-black mt-4 text-center text-4xl lg:text-left lg:text-5xl">
@@ -106,7 +106,8 @@ export default function Services() {
                 className="
                   relative group
                   outline outline-[#e6e6e6]
-                  py-10 px-8
+                  py-4
+                  lg:py-10 px-8
                   flex justify-center gap-8
                   transition-colors duration-300
                   hover:bg-AmareloP

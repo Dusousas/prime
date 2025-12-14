@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Main from "@/components/Main";
 import Mission from "@/components/Mission";
 import Numbers from "@/components/Numbers";
+import Professional from "@/components/Professional";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Services />
       <Numbers />
       <Testimonial />
+      <Professional />
     </>
   );
 }

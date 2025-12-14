@@ -35,7 +35,7 @@ export default function Mission() {
             <Play />
           </article>
 
-          <article className="lg:w-[40%] px-6 ">
+          <article className="lg:w-[40%] px-6">
             <div className="relative p-4">
               {/* SETAS DE CIMA (direita -> esquerda, piscando) */}
               <div className="pointer-events-none">

@@ -42,7 +42,7 @@ export default function EffectAbout() {
         {items.map((item, index) => (
           <h2
             key={`${item.text}-${index}`}
-            className="uppercase font-bold  tracking-widest text-5xl lg:text-6xl"
+            className="uppercase font-bold  tracking-widest text-[44px] lg:text-6xl"
             style={getTextStyle(index)}
           >
             {item.text}

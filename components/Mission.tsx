@@ -35,7 +35,7 @@ export default function Mission() {
             <Play />
           </article>
 
-          <article className="lg:w-[40%] mx-auto">
+          <article className="lg:w-[40%] px-6 ">
             <div className="relative p-4">
               {/* SETAS DE CIMA (direita -> esquerda, piscando) */}
               <div className="pointer-events-none">
@@ -62,11 +62,11 @@ export default function Mission() {
               </div>
 
               {/* Linhas horizontais completas que ultrapassam */}
-              <div className="absolute top-0 left-0 right-0 h-0.5 bg-white -mx-8" />
-              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-white -mx-8" />
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-white -mx-4 lg:-mx-8" />
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-white -mx-4 lg:-mx-8" />
 
               {/* Linhas verticais completas que ultrapassam */}
-              <div className="absolute top-0 bottom-0 left-0 w-0.5 bg-white -my-8">
+              <div className="absolute top-0 bottom-0 left-0 w-0.5 bg-white -my-4 lg:-my-8">
                 {/* SETAS LATERAIS (baixo -> cima, piscando) */}
                 <div className="pointer-events-none">
                   {sideArrows.map((b, i) => (
@@ -92,7 +92,7 @@ export default function Mission() {
                 </div>
               </div>
 
-              <div className="absolute top-0 bottom-0 right-0 w-0.5 bg-white -my-10" />
+              <div className="absolute top-0 bottom-0 right-0 w-0.5 bg-white -my-4 lg:-my-8" />
 
               {/* IMAGEM INTERATIVA */}
               <motion.img

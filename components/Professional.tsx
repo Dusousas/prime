@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { FaInstagramSquare, FaWhatsapp, FaFacebookF } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 type Social = {
   type: "instagram" | "whatsapp" | "facebook";
@@ -28,8 +29,10 @@ type Personal = {
 };
 
 function SocialIcon({ type }: { type: Social["type"] }) {
-  if (type === "instagram") return <FaInstagramSquare className="text-AmareloP text-lg" />;
-  if (type === "whatsapp") return <FaWhatsapp className="text-AmareloP text-lg" />;
+  if (type === "instagram")
+    return <FaInstagramSquare className="text-AmareloP text-lg" />;
+  if (type === "whatsapp")
+    return <FaWhatsapp className="text-AmareloP text-lg" />;
   return <FaFacebookF className="text-AmareloP text-lg" />;
 }
 
@@ -66,7 +69,7 @@ export default function Professional() {
         image: "/profile/personal-1.png",
         socials: [{ type: "instagram", href: "#", label: "Instagram" }],
       },
-            {
+      {
         id: 4,
         name: "Lucas Ferreira",
         role: "Personal",
@@ -80,7 +83,34 @@ export default function Professional() {
 
   return (
     <>
-      <section className="py-20">
+      <section className="py-20 relative">
+<div className="pointer-events-none hidden lg:block">
+  <motion.img
+    src="/icons/icon1.png"
+    alt=""
+    className="absolute left-8 top-6 -rotate-45"
+    animate={{ y: [0, -14, 0], x: [0, 6, 0] }}
+    transition={{
+      duration: 5.5,
+      repeat: Infinity,
+      repeatType: "mirror",
+      ease: "easeInOut",
+    }}
+  />
+
+  <motion.img
+    src="/treino.png"
+    alt=""
+    className="absolute right-8 bottom-8 rotate-45"
+    animate={{ y: [0, 20, 0], x: [0, -6, 0] }}
+    transition={{
+      duration: 6.5,
+      repeat: Infinity,
+      repeatType: "mirror",
+      ease: "easeInOut",
+    }}
+  />
+</div>
         <div className="maxW">
           <p className="font-Roboto uppercase text-AmareloP text-xl font-medium text-center">
             Personais qualificados
@@ -116,7 +146,11 @@ export default function Professional() {
 
                       {/* FOTO (fora do card, em cima) */}
                       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-4 border-black rounded-full flex items-center justify-center bg-black z-20">
-                        <img className="rounded-full" src={p.image} alt={p.name} />
+                        <img
+                          className="rounded-full"
+                          src={p.image}
+                          alt={p.name}
+                        />
                       </div>
 
                       {/* Conteúdo */}

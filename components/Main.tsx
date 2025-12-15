@@ -13,7 +13,7 @@ export default function Main() {
               Lorem ipsum dolor sit amet consectetur
             </p>
 
-            <h1 className="font-Over font-bold text-white mt-4 text-center text-4xl xl1:text-left xl1:text-7xl">
+            <h1 className="font-Over font-bold text-white mt-4 text-center text-5xl xl1:text-left xl1:text-7xl">
               Build Your Perfect Body And Healthy Growth
             </h1>
 
@@ -35,7 +35,7 @@ export default function Main() {
         </div>
 
         {/* < xl1 escondido | >= xl1 aparece */}
-        <article className="bg-AmareloP absolute bottom-0 right-0 panel2 hidden xl1:block">
+        <article className="bg-AmareloP absolute bottom-0 right-0 panel2 hidden desktop:block">
           <div className="z-10 absolute bottom-0 right-0 flex gap-4 w-full justify-center p-4">
             <FaInstagramSquare className="text-black text-3xl cursor-pointer" />
             <FaInstagramSquare className="text-black text-3xl cursor-pointer" />

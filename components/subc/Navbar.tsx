@@ -93,11 +93,11 @@ export default function Navbar({ variant = "solid" }: NavbarProps): JSX.Element 
 
   const menuItems: MenuItem[] = [
     { name: "Início", section: "home", path: "/" },
-    { name: "Serviços", section: "services", path: "/" },
-    { name: "Planos", section: "plans", path: "/" },
-    { name: "Portfólio", section: "portfolio", path: "/" },
-    { name: "Dúvidas", section: "faq", path: "/" },
-    { name: "Afiliados", path: "/afiliados" },
+    { name: "Sobre nós", section: "about", path: "/" },
+    { name: "Nossa missão", section: "mission", path: "/" },
+    { name: "Diferenciais", section: "services", path: "/" },
+    { name: "Profissionais", section: "profissionais", path: "/" },
+    { name: "Contato",  section: "contato", path: "/"  },
   ];
 
   // botão usado tanto no desktop quanto no drawer

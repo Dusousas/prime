@@ -3,7 +3,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 export default function Main() {
   return (
     <>
-      <section className="bgMain relative">
+      <section id="home" className="bgMain relative">
         <div className="absolute inset-0 bg-black/60" />
         <div className="maxW relative z-10 flex flex-col justify-center h-full">
           <div className="lg:w-[900px]">

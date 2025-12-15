@@ -13,7 +13,7 @@ export default function Mission() {
 
   return (
     <>
-      <section className="py-20 bg-black relative overflow-hidden">
+      <section id="mission" className="py-20 bg-black relative overflow-hidden">
         <EffectMission />
 
         <div className="maxW relative z-10 flex flex-col gap-20 lg:flex-row">

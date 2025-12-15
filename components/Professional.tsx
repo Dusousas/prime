@@ -83,34 +83,34 @@ export default function Professional() {
 
   return (
     <>
-      <section className="py-20 relative">
-<div className="pointer-events-none hidden lg:block">
-  <motion.img
-    src="/icons/icon1.png"
-    alt=""
-    className="absolute left-8 top-6 -rotate-45"
-    animate={{ y: [0, -14, 0], x: [0, 6, 0] }}
-    transition={{
-      duration: 5.5,
-      repeat: Infinity,
-      repeatType: "mirror",
-      ease: "easeInOut",
-    }}
-  />
+      <section id="profissionais" className="py-20 relative">
+        <div className="pointer-events-none hidden lg:block">
+          <motion.img
+            src="/icons/icon1.png"
+            alt=""
+            className="absolute left-8 top-6 -rotate-45"
+            animate={{ y: [0, -14, 0], x: [0, 6, 0] }}
+            transition={{
+              duration: 5.5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
+          />
 
-  <motion.img
-    src="/treino.png"
-    alt=""
-    className="absolute right-8 bottom-8 rotate-45"
-    animate={{ y: [0, 20, 0], x: [0, -6, 0] }}
-    transition={{
-      duration: 6.5,
-      repeat: Infinity,
-      repeatType: "mirror",
-      ease: "easeInOut",
-    }}
-  />
-</div>
+          <motion.img
+            src="/treino.png"
+            alt=""
+            className="absolute right-8 bottom-8 rotate-45"
+            animate={{ y: [0, 20, 0], x: [0, -6, 0] }}
+            transition={{
+              duration: 6.5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
+          />
+        </div>
         <div className="maxW">
           <p className="font-Roboto uppercase text-AmareloP text-xl font-medium text-center">
             Personais qualificados

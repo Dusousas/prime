@@ -47,7 +47,7 @@ tenetur magnam voluptatum!`,
 export default function About() {
   return (
     <>
-      <section className="py-20">
+      <section id="about" className="py-20">
         <div className="maxW">
           <div className="flex flex-col gap-20 lg:flex-row">
             <article className="relative w-full flex justify-center items-center lg:w-[50%]">

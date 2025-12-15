@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Main from "@/components/Main";
 import Mission from "@/components/Mission";
 import Numbers from "@/components/Numbers";
@@ -16,6 +17,7 @@ export default function Home() {
       <Numbers />
       <Testimonial />
       <Professional />
+      <Contact />
     </>
   );
 }

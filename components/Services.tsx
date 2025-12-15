@@ -47,7 +47,7 @@ export default function Services() {
 
   return (
     <>
-      <section className="py-20 relative">
+      <section id="services" className="py-20 relative">
         <img
           className="absolute w-[340px] top-8 lg:left-55 -z-10"
           src="/iconservice.png"

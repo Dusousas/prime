@@ -57,7 +57,7 @@ export default function Header() {
 
       {/* ===== PAINEL UNIFICADO (diagonal -> retângulo) ===== */}
       <aside
-        className={`hidden lg:block fixed top-0 left-0 z-[70] w-[320px] bg-white shadow-2xl transition-all duration-500 ease-out ${
+        className={`hidden desktop:block fixed top-0 left-0 z-[70] w-[320px] bg-white shadow-2xl transition-all duration-500 ease-out ${
           isAtTop ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
         style={{

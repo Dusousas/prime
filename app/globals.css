@@ -12,6 +12,10 @@
   --font-Roboto: var(--font-roboto);
 
   --color-AmareloP: #FBCE29;
+
+  --breakpoint-desktop: 1100px;
+  --breakpoint-xl1: 1480px;
+
 }
 
 @media (prefers-color-scheme: dark) {

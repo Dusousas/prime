@@ -138,14 +138,14 @@ export default function Navbar({ variant = "solid" }: NavbarProps): JSX.Element 
   return (
     <>
       {/* Desktop */}
-      <nav className="hidden lg:block lg:pr-10">
+      <nav className="hidden desktop:block lg:pr-10">
         <ul className="flex gap-6 items-center  text-md uppercase tracking-widest">
           {menuItems.map((item) => renderButton(item, "topbar"))}
         </ul>
       </nav>
 
       {/* Mobile */}
-      <div className="lg:hidden pr-4 lg:pr-0">
+      <div className="desktop:hidden pr-4 lg:pr-0">
         <button
           onClick={() => setIsOpen((prev) => !prev)}
           className={`text-3xl cursor-pointer focus:outline-none relative z-50 transition-colors ${
